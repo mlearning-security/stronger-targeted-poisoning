@@ -73,8 +73,10 @@ ID5→-d ember -id 9
   
 
 * solver for ID1 : 
-```python 02_ransom.py -d ransom -t 200 -selection 400 -epo 10000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 10 -phi -p 5 -gpu -1 -multi -mulmode 1 -id 1 -d_seed 0 -sphere -solver```
+
+  ```python 02_ransom.py -d ransom -t 200 -selection 400 -epo 10000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 10 -phi -p 5 -gpu -1 -multi -mulmode 1 -id 1 -d_seed 0 -sphere -solver```
 
 * solver for ID4 : 
- ```python 01_ember.py -d ember -p 10 -id 6 -d_seed 10 -scaler 0 -t 100 -epo 2000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 100 -phi  -gpu -1 -multi -mulmode 1```
+
+   ```python 01_ember.py -d ember -p 10 -id 6 -d_seed 10 -scaler 0 -t 100 -epo 2000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 100 -phi  -gpu -1 -multi -mulmode 1```
 
