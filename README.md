@@ -1,4 +1,4 @@
-This is a Python implementaion of "Stronger Targeted Poisoning Attacks AgainstMalware Detection".
+This is a Python implementaion of "Stronger Targeted Poisoning Attacks Against Malware Detection".
 
 The datasets used in our validation (Ransomware and M-EMBER) are not included in the repository. 
 
@@ -66,15 +66,15 @@ ID5→-d ember -id 9
 
 #### EXAMPLE
 
-* basic attack for ID2
+* basic attack for ID2 : 
 
-* ```python 02_ransom.py -d ransom -id 5 -t 200  -selection 400 -epo 10000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 10 -phi -p 5 -gpu -1 -multi -mulmode 1 -sphere```
+  ```python 02_ransom.py -d ransom -id 5 -t 200  -selection 400 -epo 10000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 10 -phi -p 5 -gpu -1 -multi -mulmode 1 -sphere```
 
   
 
-* solver for ID1
+* solver for ID1 : 
 ```python 02_ransom.py -d ransom -t 200 -selection 400 -epo 10000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 10 -phi -p 5 -gpu -1 -multi -mulmode 1 -id 1 -d_seed 0 -sphere -solver```
 
-* solver for ID4
-```python 01_ember.py -d ember -p 10 -id 6 -d_seed 10 -scaler 0 -t 100 -epo 2000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 100 -phi  -gpu -1 -multi -mulmode 1```
+* solver for ID4 : 
+ ```python 01_ember.py -d ember -p 10 -id 6 -d_seed 10 -scaler 0 -t 100 -epo 2000 -shuffle -term -eps 1e-4 -eta 0.3 -decay -max 100 -phi  -gpu -1 -multi -mulmode 1```
 
